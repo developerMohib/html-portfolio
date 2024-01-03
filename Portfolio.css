@@ -1,0 +1,837 @@
+html{
+    scroll-behavior: smooth;
+    transition: .5s;
+}
+p, a, h1,h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.underline{
+    border-top: 3px solid #3391c0;
+    width: 150px;
+}
+.container-fluid{
+    max-width: 1320px;
+}
+
+    /* --------------------------------------------------------  Header CSS  -------------------------------------------------------------- */
+/* Header */
+
+.Header-Menu {
+    background-color: #ffffff;
+    padding-bottom: 0px;
+    padding-top: 15px;
+    z-index: 1;
+    box-shadow: 0px 0px 5px 2px #d4d7d9;
+}
+.Header-Menu{
+    position: relative;
+}
+.Header-Menu .Hide-Menu {
+    position: absolute;
+    top: 40%;
+    right: 13px;
+    width: 45px;
+    height: 25px;
+    opacity: 0;
+}
+.Header-Menu span {
+    color: black;
+    position: absolute;
+    top: 14%;
+    right: 22px;
+    font-size: 32px;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.Header-Menu .animation {
+    font-size: 4px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #ff0000;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    animation: Playbtn 1s ease-out infinite;
+}
+
+@keyframes Playbtn {
+    0%{ 
+        transform: scale(1);
+        opacity: 1;
+    }
+    25%{ 
+        transform: scale(1.2);
+        opacity: .8;
+    }
+    50%{
+        transform: scale(1.6);
+        opacity: .4;
+    }
+    100%{
+        
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+a.navbar-brand {
+    margin-top: -20px;
+}
+.Header-Menu .navbar-brand .favicon {
+    width: 35px;
+    height: 33px;
+}
+.Header-Menu .List-Menu{
+    display: flex;
+
+}
+.List-Menu{
+    margin-right: 100px;
+}
+
+.List-Menu li {
+    list-style-type: none;
+    padding: 2px 12px;
+    position: relative;
+    border-left: 1px solid #625243 ;
+}
+.List-Menu li:first-child{
+    border-left: none;
+}
+.List-Menu li a{
+    color: rgb(53, 49, 49);
+    text-decoration: none;
+    font-size: 19px;
+    transition: .4s;
+}
+.List-Menu li:hover > a{
+    color: #74dbe0 ;
+
+}
+
+   /* --------------------------------------------------------  DorpDowm CSS  -------------------------------------------------------------- */
+/* DropDown-Menu */
+
+.List-Menu li ul{
+    position: absolute;
+    width: 200px;
+    background-color: rgba(241, 243, 244, 0.4);
+    top: 220%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.List-Menu li ul li{
+    margin-left: 0;
+    border-left: none;
+}
+.List-Menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 140%;
+}
+
+   /* --------------------------------------------------------  Slider CSS  -------------------------------------------------------------- */
+/* Slider CSS */
+.Slider {
+    z-index: -2;
+}
+.Slider-Header h3 {
+    font-weight: 600;
+    color: #4c4747;
+}
+.Slider-img img{
+    width: auto;
+    height: 400px;
+}
+
+.Slider .count-nmbr h3 {
+    font-weight: 600;
+    text-align: right;
+    padding: 4px 0px;
+    font-size: 45px;
+    color: #1aa5fb;
+}
+.Slider .count-text h6 {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 4px 0px;
+    color: #1aa5fb;
+    margin-top: 8px;
+    line-height: 20px;
+}
+
+   /* --------------------------------------------------------  About Page  CSS  -------------------------------------------------------------- */
+/* About Me*/
+
+.About-me{
+    background-color: #d2d2dd4d;
+}
+.About-Title h5 {
+    font-weight: 500;
+    font-size: 22px;
+    color: #aeb1b7;
+    padding: 6px 0px;
+    margin-top: 15px;
+}
+.About-Title p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.about-nmbr {
+    font-size: 35px;
+    font-weight: 700;
+    color: #d3d3db;
+}
+.about-myself-heading {
+    font-weight: 700;
+    font-size: 30px;
+    color: #565454;
+}
+.about-myself p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* About page */
+
+
+.Personal-Details {
+    margin-top: 85px;
+}
+.Personal-Details .Details-All {
+    color: #b2b2b4;
+    line-height: 45px;
+}
+.Personal-Details .Details-All span {
+    font-size: 25px;
+    color: black;
+    font-weight: 500;
+}
+.Personal-Details .Details-All strong {
+    font-size: 25px;
+    font-weight: 600;
+}
+.Visit-More {
+    margin-top: 45px;
+}
+.Visit-More .Displaying a img{
+    width: 200px;
+}
+.Visit-More .Displaying a img:hover{
+    transform: scale(1.2, 1.2);
+    transition:.5s;
+}
+.Visit-More .button a{
+    font-size: 13px;
+}
+.Skills .Skills-Heading h3{
+    font-size: 20px ;
+    font-weight: 600;
+}
+
+.Skills .Skills-List-1 ul li{
+    list-style-type: none;
+}
+.Skills .Skills-List-1 ul li span{
+    width: 30px;
+    color: #f30505;
+}
+.Skills .Skills-List-1 ul li:hover{
+    color:#f30505 ;
+    padding: 0px 5px;
+    transition: .5s;
+}
+.Skills .Progress-Bar-Own strong{
+    color:#333333 ;
+    font-weight: 400;
+    line-height: 50px;
+}
+.Skills.Progress-Bar-Own .progress-bar{
+    color: white;
+    font-size: 15px;
+}
+   /* --------------------------------------------------------  Services CSS  -------------------------------------------------------------- */
+/* Services */
+
+.Service{
+    background-color: #f8faff;
+}
+.head-line h1 {
+    color: #ebedf2;
+    font-size: 150px;
+    font-weight: 800;
+    position: relative;
+}
+.what-i-do h6{ 
+    font-size: 50px;
+    font-weight: 800;
+    color: #4e4d4d;
+}
+.what-i-do {
+    position: absolute;
+    top: 30%;
+    left: auto;
+    color: #4e4d4d;
+    margin: auto;
+    text-align: center;
+}
+.what-i-do .underline{
+    margin-top: -8px;
+}
+.Service-Icon li {
+    list-style-type: none;
+    margin-top: 30px;
+}
+.Service-Icon li a {
+    font-size: 40px;
+    color: #45b2ec;
+    padding: 16px 19px;
+    border: 3px solid #45b2ec;
+    border-radius: 50%;
+}
+.Service-Icon li a.bolt-icon {
+    font-size: 50px !important;
+    padding: 7px 18px !important;
+}
+.Service-text h4 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.Service-text p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #9a9ba1;
+}
+/* .Service-text a img {
+    display: none;
+} */
+.Services-Hovering:hover .Service-Icon{
+    transform: scale(1.3, 1.3);
+    transition: .5s;
+} 
+  /* --------------------------------------------------------  Process CSS  -------------------------------------------------------------- */
+/* Process CSS */
+
+.Process .what-i-do h6{
+    font-size: 35px;
+}
+.Process .what-i-do {
+    top: 38%;
+}
+
+.Process-Connection{
+    position: relative;
+}
+.Process-Connection::after {
+    content: "";
+    width: 718px;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 285px;
+    background-color: #45b2ec;
+}
+.tomra-margin-top{
+    margin-top: -105px;
+}
+.and-bottom{
+    margin-top: 105px
+}
+.Process-icon li{
+    list-style-type: none;
+    
+}
+.Process-icon li a {
+    font-size: 65px;
+    border: 2px solid #45b2ec;
+    padding: 41px 50px;
+    color: #45b2ec;
+    border-radius: 50%;
+    background-color: white;
+}
+.Process-icon li a.vodro-icon {
+    padding: 40px !important;
+}
+.Process-icon li a.Process-tera-icon {
+    padding: 40px 49px !important;
+}
+
+.Process .Process-text{
+    margin-top: 55px;
+}
+.Process .Process-text h4{
+    font-size: 25px;
+    color:#999da2;
+}
+.Process .Process-text p{
+    font-size: 16px;
+}
+   /* -------------------------------------------------------- ProtFolio CSS  -------------------------------------------------------------- */
+/* PortFolio */
+
+
+.PortFolio-Menu-list ul li{
+    list-style-type: none;
+    margin: 2px;
+    position: relative; 
+}
+.PortFolio-Menu-list ul li a{
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #24acf2;
+    border-radius: 5px;
+    z-index: 2;
+    color: #24acf2;
+}
+.PortFolio-Menu-list ul li a::before{
+    content: " ";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    border-radius: 5px;
+    z-index: -2;
+    transition: .5s;
+}
+.PortFolio-Menu-list ul li:hover a{
+    color: white;
+}
+.PortFolio-Menu-list ul li a:hover::before{
+    width: 100%;
+}
+
+.PortFolio .Portfolio-hover{
+    margin-bottom: 40px;
+}
+.PortFolio .Portfolio-hover a{
+    position: relative;
+    text-decoration: none;
+}
+
+.PortFolio .Portfolio-hover a img {
+    width: 300px;
+    height: 260px;
+    z-index: -3;
+}
+.PortFolio .Portfolio-hover-tex {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+    margin-top: -50px;
+    border-radius:0px 0px 6px 6px;
+    width: 300px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+.PortFolio .Portfolio-hover a:hover .Portfolio-hover-tex{
+    visibility: visible;
+    opacity: 1;
+}
+
+.PortFolio .Portfolio-hover a::before {
+    content: " ";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom:-15px;
+    left: 0;
+    border-radius: 5px 5px 0px 0px;
+    transition: .4s;
+}
+.PortFolio .Portfolio-hover a:hover::before{
+    background-color: rgb(105, 103, 103, 0.5);
+    transform: translateY(-10px);
+    height: 258px;
+}
+.pagination li a{
+    padding: 0px 10px;
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+}
+.pagination li a:hover{
+    color: #21a7cd;
+}
+     /* --------------------------------------------------------  Contact CSS  -------------------------------------------------------------- */
+/* Contact Page */
+
+.Contact {
+    background-color: #f1efe65e;
+}
+textarea.form-control {
+    height: auto;
+    width: 95%;
+    margin: auto;
+}
+.Contact-icon{
+    font-size: 40px;
+    color: #2dcfc8
+}
+.Contact-Item ul li{
+    list-style-type: none;
+ }
+ .Contact-Item .Contact-Name {
+    font-weight: 600;
+    font-size: 30px;
+    color: #333333;
+}
+.Contact-Item .Contact-info {
+    font-size: 20px;
+}
+
+.contact-fron #status {
+    padding: 5px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-fron #status.success{
+    background-color: rgb(47, 247, 97);
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: rgb(235, 54, 69);
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+}
+    /* --------------------------------------------------------  Footer CSS  -------------------------------------------------------------- */
+/* Footer */
+
+.Footer{
+    background-color: #024e65;
+    padding: 30px 0px;
+}
+.Footer .fooeter-icon li{
+    list-style-type: none; ;
+}
+.Footer .fooeter-icon li a {
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 21px 23px;
+}
+.Footer .fooeter-icon li .tera-icon-fb{
+    padding: 22px 27px;
+}
+.Footer .fooeter-icon li .text {
+    color: white;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-left: -5px;
+}
+.Footer .fooeter-icon li .link a{
+    border: none;
+}
+.Footer .fooeter-icon li a:hover{
+    color: rgb(194, 65, 65);
+    
+}
+.Footer-link li{
+    list-style-type: none;
+}
+.Footer-link li h5 {
+    text-align: center;
+    font-size: 15px;
+    color: #80a0ad;
+}
+.Footer-link li a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+.Footer-bottom{
+    background-color:#3391c0 ;
+}
+.Footer-bottom h5 {
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding: 8px 0px 0px;
+}
+.Footer-bottom h5 a{
+    color: white;
+    text-decoration: none;
+}
+   /* --------------------------------------------------------  Blog CSS  -------------------------------------------------------------- */
+/* Blog */
+
+.BreadCumb{
+    background-color: #e9ecef;
+}
+.BreadCumb .breadcrumb{
+    margin: auto;
+    background-color: #e9ecef;
+}
+.BreadCumb .breadcrumb {
+    width: 200px;
+}
+.BreadCumb .breadcrumb li a{
+    text-decoration: none;
+}
+.Blog{
+    background-color: #f6f6fb;
+}
+.Blog .Blog-Image img {
+    width: 250px;
+    height: 230px;
+}
+.Blog-Content {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+.Blog-Content:hover{
+    transform: translateY(-9px);
+    transition: .5s;
+}
+.Blog .Blog-text h4{ 
+    padding: 10px 0px;
+}
+/* ---------------------------------------------------------My Activity Page ------------------------------------------------------------ */
+.Max-Witdh{
+    max-width: 1148px;
+    margin: auto;
+}
+
+.My-Activity{
+    background-color: #5e5e5e;
+    padding: 0px 10px;
+}
+.Top-Left-Menu{
+    height: 35px;
+}
+.Top-Left-Menu ul{
+    display: flex;
+}
+.Top-Left-Menu ul li{
+    list-style-type: none;
+    color: white;
+}
+.Top-Left-Menu ul li span{
+    color: white;
+    padding: 0px 10px;
+}
+
+.Order-btn .btn {
+    color: white;
+    font-size: 15px;
+    background-color: #daa676;
+}
+.Menu-Slider .Logo{
+    background-color: rgb(52 49 49 / 10%);
+    border-radius: 4px ;
+}
+.Menu-Slider .Logo h2{
+    margin-top: 3px;
+    color: rgb(206, 198, 198);
+    text-align: center;
+}
+.Menu-Slider{
+    background: url(./image/sblog\ \(2\).png) no-repeat top center;
+    background-size: cover;
+    
+    position: relative;
+}
+.Menu-Slider .Menu-Header ul{
+    display: flex;
+}
+.Menu-Slider::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(56, 55, 53, 0.7);
+}
+.Menu-Slider .Menu-Header ul li {
+    list-style-type: none;
+    padding-right: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 8px;
+    color: white;
+}
+.all-reserved p {
+    color: white;
+}.Slider-Menu-Header p{
+    color: white;
+} 
+.Menu-Slider .Slider-Menu-Header h2{
+    color: white;
+}
+.text-center-hobi span {
+    color: white;
+}
+.Menu-Slider .Menu-Header ul li:hover{
+    color:#f30505 ;
+    transition: .5s;
+}
+.Menu-Slider .Slider-Menu-Header{
+    height: 80vh;
+}
+.Slider-Menu-Header .text-center-hobi{
+    margin-top: 80px;
+}
+
+.UderLine-Two{
+    background-color: red;
+    height: 1px;
+    width: 30%;
+}
+.ceremics-About .ceramics-Name {
+    width: 40%;
+    margin:50px auto;
+}
+.ceremics-About .bg-gray {
+    background-color: rgba(90, 85, 75,0.1);
+    margin-top: 10px;
+}
+.ceramics-Name h3{
+    font-size: 30px;
+}
+.ceremics-About .ceramics-Name,.Noses-Image  p {
+    font-size: 15px;
+}
+.ceremics-About .ceramis-details p {
+    font-size: 18px;
+    color: black;
+    margin-top: 30px;
+}
+.Show-Off .Show-off-text{
+    background: url(./image/images.png)  no-repeat center center;
+    background-size: cover;
+    padding: 50px 0px;
+}
+.Show-Off .Show-off-text::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(56, 55, 53, 0.7);
+}
+.Show-off-text h3, .color-sada{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2; 
+    color: rgb(255, 255, 255);
+}
+.Noses-Header-text{
+    background-color: #ad946c;
+}
+.Noses-Header {
+    width: 60%;
+    margin: auto;
+}
+
+.Noses-Header h4, p{
+    color: black
+ }
+.Noses-Img-Text p{
+    color: white;
+    text-align: center;
+}
+.Noses-Product-Image{
+    background: url(./image/sblog\ \(1\).png) no-repeat center center;
+    background-size: cover;
+    padding: 50px 0px;
+    position: relative;
+    z-index: -1;
+}
+.Noses-Product-Image::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(43, 36, 30, 0.815);
+}
+.Noses-Image h4 {
+    z-index: 1;
+    color: #d9bb8c;
+}
+.Noses-Image .zindex{
+    z-index: 9999;
+}
+
+
+.Activity-Footer{
+    background-color:#211f22 ;
+}
+.Act-Footer-Logo h5, .sada{
+    color: rgb(253, 253, 253);
+    text-align: left;
+}
+.Act-Footer-text p {
+    font-size: 14px;
+    text-align: left;
+    color: white;
+}
+.Act-Footer-Menu li{
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+}
+.Activity-Footer li{
+    font-size: 16px;
+}
+.Act-Footer-Menu-two ul li{
+    list-style-type: none;
+    padding: 0px 5px;
+    color: white;
+}
+.Act-Footer-Menu-one ul li{
+    list-style-type: circle;
+    border-bottom: 1px solid #3b3a3b;
+    color: rgb(255, 255, 255);
+}
+.Activity-Footer-bottom{
+    background-color: black;
+}
+
+
+
+/* --------------------------------------------------------------- Responsive CSS-------------------------------------------------------------- */
+
